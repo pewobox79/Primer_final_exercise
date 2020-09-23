@@ -69,12 +69,20 @@ header {
   grid-area: right2;
 }
 
+.item9 {
+  grid-area: main3;
+}
+.item10 {
+  grid-area: right3;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
     "menu main main right right right"
     "menu right1 right1 right1 main1 main1"
-    "menu main2 main2 right2 right2 right2";
+    "menu main2 main2 right2 right2 right2"
+    "menu right3 right3 right3 main3 main3";
   grid-gap: 10px;
   padding: 10px;
 }
@@ -88,14 +96,20 @@ header {
 
 .grid-container ul {
   border: 1px solid red;
+  position: relative;
+  top: 50%;
 }
 .grid-sidebar li {
   list-style: none;
   text-transform: uppercase;
   border: 1px solid green;
+  margin: 30px 0px 30px 0px;
 }
 
-.image-item3 {
+.image {
   background-image: url("/src/images/flower-1");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  width: 300px;
 }
