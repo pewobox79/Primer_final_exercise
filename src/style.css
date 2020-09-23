@@ -4,7 +4,6 @@ body {
 }
 
 header {
-  border: 2px solid black;
   height: 150px;
 }
 .logo-section {
@@ -41,4 +40,62 @@ header {
 
 .navigation-section a {
   color: black;
+}
+
+/*grid container*/
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: main1;
+}
+.item6 {
+  grid-area: right1;
+}
+
+.item7 {
+  grid-area: main2;
+}
+.item8 {
+  grid-area: right2;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu main main right right right"
+    "menu right1 right1 right1 main1 main1"
+    "menu main2 main2 right2 right2 right2";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 30px;
+  border: 1px solid #000f40;
+}
+
+.grid-container ul {
+  border: 1px solid red;
+}
+.grid-sidebar li {
+  list-style: none;
+  text-transform: uppercase;
+  border: 1px solid green;
+}
+
+.image-item3 {
+  background-image: url("/src/images/flower-1");
+  background-size: cover;
 }
