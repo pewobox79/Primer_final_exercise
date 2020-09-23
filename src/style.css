@@ -14,11 +14,13 @@ header {
 
 .navigation-section {
   margin: 20px 0px 20px 0px;
-  height: 50px;
+  height: 80px;
+  text-align: center;
 }
 
 .navigation-section ul {
-  margin-top: 30px;
+  margin: 30px auto 30px auto;
+  width: 80%;
 }
 
 .navigation-section li {
@@ -90,14 +92,13 @@ header {
 .grid-container > div {
   text-align: center;
   padding: 40px 0;
-  font-size: 30px;
+  font-size: 20px;
   border: 1px solid #000f40;
 }
 
 .grid-container ul {
   border: 1px solid red;
   position: relative;
-  top: 50%;
 }
 .grid-sidebar li {
   list-style: none;
@@ -112,4 +113,14 @@ header {
   background-size: auto;
   background-position: center;
   width: 300px;
+}
+
+.content-box {
+  background-color: #5a5a5a;
+}
+
+.content-box:hover {
+  background-color: white;
+  box-shadow: 3px 3px 3px 10px #23a8ba;
+  transition: 0.6s;
 }
