@@ -1,126 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+    background-color: #a5a5a5;
 }
 
 header {
-  height: 150px;
+    height: 150px;
 }
+
 .logo-section {
-  width: 50%;
-  top: 20px;
-  margin: 20px 0px 20px 20px;
+    width: 50%;
+    top: 20px;
+    margin: 20px 0px 20px 20px;
 }
 
 .navigation-section {
-  margin: 20px 0px 20px 0px;
-  height: 80px;
-  text-align: center;
+    margin: 20px 0px 20px 0px;
+    height: 80px;
 }
 
 .navigation-section ul {
-  margin: 30px auto 30px auto;
-  width: 80%;
+    margin: 30px auto 30px auto;
+    width: 80%;
 }
 
 .navigation-section li {
-  list-style-type: none;
-  float: left;
-  margin: 0px 0px 0px 35px;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  border: 1px solid #000f40;
-  border-radius: 10px;
-  padding: 4px;
+    list-style-type: none;
+    float: left;
+    margin: 0px 0px 0px 35px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    border: 1px solid #000f40;
+    border-radius: 10px;
+    padding: 15px;
+    letter-spacing: 3px;
 }
 
 .navigation-section li:hover {
-  background-color: #000f40;
-  color: white;
-  transition: 0.5s;
+    background-color: #000f40;
+    color: white;
+    transition: 0.5s;
 }
 
 .navigation-section a {
-  color: black;
+    color: black;
 }
 
 /*grid container*/
 .item1 {
-  grid-area: header;
+    grid-area: header;
 }
+
 .item2 {
-  grid-area: menu;
+    grid-area: menu;
 }
+
 .item3 {
-  grid-area: main;
+    grid-area: main;
 }
+
 .item4 {
-  grid-area: right;
+    grid-area: right;
 }
+
 .item5 {
-  grid-area: main1;
+    grid-area: main1;
 }
+
 .item6 {
-  grid-area: right1;
+    grid-area: right1;
 }
 
 .item7 {
-  grid-area: main2;
+    grid-area: main2;
 }
+
 .item8 {
-  grid-area: right2;
+    grid-area: right2;
 }
 
 .item9 {
-  grid-area: main3;
+    grid-area: main3;
 }
+
 .item10 {
-  grid-area: right3;
+    grid-area: right3;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-areas:
+    display: grid;
+    grid-template-areas:
     "menu main main right right right"
     "menu right1 right1 right1 main1 main1"
     "menu main2 main2 right2 right2 right2"
     "menu right3 right3 right3 main3 main3";
-  grid-gap: 10px;
-  padding: 10px;
+    grid-gap: 10px;
+    padding: 10px;
+
 }
 
 .grid-container > div {
-  text-align: center;
-  padding: 40px 0;
-  font-size: 20px;
-  border: 1px solid #000f40;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    border: 1px solid #000f40;
+    margin: 10px;
 }
 
 .grid-container ul {
 }
+
 .grid-sidebar li {
-  list-style: none;
-  text-transform: uppercase;
-  margin-top: 30px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image {
-  background-image: url("/src/images/flower-1.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  width: 300px;
+    background-color: #23a8ba;
+    width: 300px;
+}
+
+.image:hover {
+
+
 }
 
 .content-box {
-  background-color: #5a5a5a;
+    background-color: #5a5a5a;
 }
 
-.content-box:hover {
-  background-color: white;
-  box-shadow: 3px 3px 3px 10px #23a8ba;
-  transition: 0.6s;
+.content-box:hover,
+.image:hover {
+    background-color: white;
+    box-shadow: 3px 3px 3px 10px #23a8ba;
+    transition: 0.6s;
 }
